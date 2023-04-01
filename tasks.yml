@@ -1,0 +1,9 @@
+--- # my tasks playbook 
+- hosts: webservwers
+  user: ansible
+  become: yes
+  connection: ssh
+
+  tasks:
+    - name: installing httpd s/w in webservwers
+      action: yum name=httpd state=installed

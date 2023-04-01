@@ -1,0 +1,9 @@
+--- # software installation 
+- name: s/w installation process
+  hosts: webservwers
+
+  tasks:
+    - name: install package mysql
+      yum:
+        name: mysql
+        state: latest

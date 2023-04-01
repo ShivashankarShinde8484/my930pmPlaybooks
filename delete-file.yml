@@ -1,0 +1,12 @@
+---
+- hosts: all
+  user: ansible
+  connection: ssh
+  become:  true
+
+  tasks:
+    - name: deleting a file
+      file:
+        path: /home/ansible/file1
+        state: absent
+

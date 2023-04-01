@@ -1,0 +1,5 @@
+--- # My target section playbook
+- hosts: all
+  user: anible
+  become: yes
+  connection: ssh

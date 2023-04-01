@@ -1,0 +1,12 @@
+--- # my vars section
+- hosts: webservwers
+  become: yes
+
+  vars:
+    user: sunny
+
+
+  tasks:
+    - name: creating user {{user}}
+      user:
+        name: "{{user}}"

@@ -1,0 +1,12 @@
+--- #folder creation
+- name: my test playbook
+  hosts: all
+  user: ansible
+  become: yes
+  connection: ssh
+
+  tasks:
+    - name: creating a folder
+      file:
+        path: /home/ansible/raheem
+        state: directory
